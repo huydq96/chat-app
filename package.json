@@ -45,11 +45,6 @@
     "lint": "eslint ./src --ext .ts --ext .tsx && yarn prettier",
     "prettier": "prettier --check './src/**/*.{ts,tsx}'"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn lint"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -61,5 +56,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
   }
 }
